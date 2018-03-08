@@ -255,12 +255,35 @@ footer {
   font-style: italic;
 }
 
-.news-picture {
+.news-picture, .vesti-picture {
   overflow: hidden;
 }
 
-.news-picture img {
+.news-picture img, .vesti-picture img {
   width: 100%;
+}
+
+.vesti-picture {
+  padding: 0px 30px 30px 30px;
+}
+
+button.sledeca-vest {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000;
+  border: none;
+  height: 30px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+button.sledeca-vest:hover {
+  background-color: #fff;
+
 }
 
 .news-caption {
@@ -277,8 +300,35 @@ footer {
   font-size: 20px;
 }
 
-.news-caption p {
+.news-caption p{
   font-size: 12px;
+}
+
+.vesti-title span {
+  padding-left: 30px;
+  line-height: 45px;
+  font-size: 32px;
+}
+
+.vesti-title {
+  padding-top: 30px;
+}
+
+.vesti-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.vesti-content h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.vesti-content p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: justify;
+
 }
 
 .logo-banner {
@@ -446,6 +496,10 @@ footer {
     max-height: 200px;
   }
 
+  .vesti-picture img {
+    max-height: 350px;
+  }
+
   .news-caption {
     position: relative;
   }
@@ -515,6 +569,10 @@ ul.nav.navbar-nav.navbar-right >li a {
 }
 
 .vesti-top-image {
-  background-image: url(../images/vesti/vesti-top-image.jpg);
-  height: 395px;
+  /*background-image: url(../images/vesti/vesti-top-image.jpg);*/
+  width: 100%;
+}
+
+p.sub {
+  font-weight: bold;
 }
