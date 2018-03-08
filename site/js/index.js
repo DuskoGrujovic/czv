@@ -10,6 +10,12 @@ $(".team-item").on("click", function() {
   $(this).addClass("active");
 });
 
+// Choose team game
+$(".team-game-item").on("click", function() {
+  $(".team-game-item").removeClass("active");
+  $(this).addClass("active");
+});
+
 $("#game-lol").on("click", function() {
   $(".score-list, .choose-team").removeClass("csgo");
 });

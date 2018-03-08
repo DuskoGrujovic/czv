@@ -509,8 +509,9 @@ button.next-news:hover {
   display: flex;
 }
 
+.game-item.active:before,
 .game-item:hover:before {
-background: #fff;
+  background: #fff;
 }
 
 .game-item:before {
@@ -554,6 +555,7 @@ background: #fff;
   border-top: 2px solid #86151c;
 }
 
+#team-lol,
 .lol {
   background: #38070a;
   background: -moz-linear-gradient(
@@ -688,6 +690,63 @@ background: #fff;
 
 #ebl-league {
   border-bottom: 1px solid #983237;
+}
+
+.team-game-item {
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  background: #000;
+  border-left: 1px solid #86151c;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-game-item:before {
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  background: #86151c;
+
+  -webkit-transform: rotatez(45deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform: rotatez(45deg);
+  -ms-transform-style: preserve-3d;
+  transform: rotateZ(45deg);
+  transform-style: preserve-3d;
+}
+
+.team-game-item.active:before,
+.team-game-item:hover:before {
+  background: #fff !important;
+}
+
+.team-game-title {
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  background: #000;
+}
+
+.team-game-title h4 {
+  line-height: inherit;
+  font-style: italic;
+}
+
+.choose-team-game {
+  height: 60px;
+  background: #000;
+}
+
+.team-game-item img {
+  max-width: 65px;
 }
 
 
