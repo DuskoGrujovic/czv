@@ -466,6 +466,8 @@ button.next-news:hover {
 
 .previous-matches-table {
   height: 100%;
+  width: 100%;
+  display: table;
 }
 
 .previous-matches-item {
@@ -570,7 +572,7 @@ button.next-news:hover {
 .game-item {
   height: 192px;
   width: 192px;
-  line-height: 212px;
+  line-height: 192px;
   text-align: center;
   border-right: 2px solid #86151c;
   position: relative;
