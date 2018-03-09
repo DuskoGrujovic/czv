@@ -10,6 +10,12 @@ $(".team-item").on("click", function() {
   $(this).addClass("active");
 });
 
+// Choose team category
+$(".team-categories").on("click", function() {
+  $(".team-categories").removeClass("active");
+  $(this).addClass("active");
+});
+
 // Choose team game
 $(".team-game-item").on("click", function() {
   $(".team-game-item").removeClass("active");
@@ -23,3 +29,6 @@ $("#game-lol").on("click", function() {
 $("#game-csgo").on("click", function() {
   $(".score-list, .choose-team").addClass("csgo");
 });
+
+// Get current year for footer
+$(".currentYear").text( (new Date).getFullYear() );

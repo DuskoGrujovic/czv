@@ -36,6 +36,7 @@ padding: 10px;
 .navbar-inverse .navbar-toggle:hover,
 .navbar-toggle {
   background-color: #e10d26;
+  margin-top: 15px;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -151,6 +152,7 @@ padding: 10px;
 body {
   background-color: #292929;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-page {
@@ -173,8 +175,20 @@ a {
   color: #fff;
 }
 
+a:hover {
+	color: #86151c;
+}
+
 .no-padding {
   padding: 0px;
+}
+
+.darker {
+	background: #000;
+}
+
+.centered {
+	text-align: center;
 }
 
 .carousel-control i {
@@ -709,6 +723,7 @@ button.next-news:hover {
   border-left: 1px solid #86151c;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .team-game-item:before {
@@ -752,15 +767,180 @@ button.next-news:hover {
   background: #000;
 }
 
+.team-members-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between; 
+  justify-content: space-between;
+}
+
 .team-game-item img {
   max-width: 65px;
 }
 
+.team-profile {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 
+.team-profile-menu,
+.team-member-profile {
+    display: block;
+    position: relative;
+}
+
+.team-member-profile {
+  border-left: 1px solid #86151c;
+  border-bottom: 1px solid #86151c;
+  width: 20%;
+  overflow: hidden;
+}
+
+.team-member-picture {
+	position: relative;
+}
+
+.team-member-profile img {
+	max-height: 238px;
+	position: absolute;
+	right: 0;
+	}
+
+.team-member-info {
+	background: rgba(0, 0, 0, 0.74);
+	position: absolute;
+	width: 100%;
+	height: 84px;
+	bottom: 0px;
+	padding: 10px 15px;
+}
+
+.team-member-info h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.team-member-links {
+	padding-top: 2px;
+}
+
+.team-member-links a {
+	font-size: 12px;
+	padding-top: 5px;
+	margin-right: 8px;
+}
+
+.team-categories {
+	width: 78px;
+	height: 78px;
+	line-height: 78px;
+	background: #000;
+	border-bottom: 1px solid #86151c; 
+	font-size: 12px;
+	font-weight: 600;
+	font-style: italic;
+	text-align: center;
+	cursor: pointer;
+}
+
+.team-categories.active {
+	background: #86151c;
+}
+
+#team-first {
+	font-size: 18px;
+	text-align: left;
+	line-height: 20px;
+	padding: 19px;
+}
+
+.red-footer {
+	background: url(../images/home/bg-red-texture.jpg);
+  background-size: cover;
+}
+
+.red-footer div {
+	padding-top: 60px;
+}
+
+.red-footer img {
+	max-width: 122px;
+}
+
+.red-footer h4 {
+	font-weight: 700;
+	max-width: 100px;
+}
+
+.red-footer ul {
+	font-size: 10px;
+	padding-top: 20px;
+	padding-left: 0px;
+	line-height: 22px;
+}
+
+.red-footer ul li {
+	list-style: none;
+}
+
+.red-footer a:hover {
+	color: gray;
+}
+
+.red-footer p {
+	padding-top: 40px;
+	font-size: 12px;
+	max-width: 300px;
+}
+
+.footer-linkovi ul {
+	padding-top: 40px;
+}
+
+.gray-footer {
+	height: 110px;
+	line-height: 110px;
+	background: #000;
+}
+
+.gray-footer p {
+	padding: 0 55px;
+	font-size: 11px;
+	margin-bottom: 0px;
+}
+
+.copyright {
+	float: left;
+}
+
+.designed-by {
+	float: right;
+}
 
 /********** END MAIN ***********/
 
 /********** MEDIA SIZES ***********/
+
+@media screen and (max-width: 460px) {
+	.team-game-title {
+	  max-width: 20%;
+	}
+
+	.team-game-item {
+	  max-width: 40%;
+	}
+
+	.team-member-profile {
+	    width: 50% !important;
+	}
+}
 
 @media (min-width: 768px) {
 
@@ -810,14 +990,14 @@ button.next-news:hover {
   }
 
   #myNavbar {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex !important;
-  -webkit-justify-content: space-between; 
-  justify-content: space-between;
-}
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex !important;
+	  -webkit-justify-content: space-between; 
+	  justify-content: space-between;
+	}
 
 .next-match {
   height: 220px;
@@ -854,6 +1034,10 @@ button.next-news:hover {
   .previous-match-info {
     padding-left: 10%;
   }
+
+  .red-footer {
+		height: 322px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -913,6 +1097,10 @@ button.next-news:hover {
   .broadcast-img {
     float: left;
   }
+  
+	.carousel-caption h3 {
+	  font-size: 3.5vw;
+	}
 
   .news-picture {
     max-height: 200px;
@@ -1015,6 +1203,47 @@ button.next-news:hover {
 
   .team-item img {
     max-height: 50px;
+  }
+
+  .team-members-wrap {
+	  display: block;
+	}
+
+	.team-member-profile img {
+	    position: relative;
+	    float: right;
+	}
+
+	.team-member-profile {
+	    width: 33.3%;
+	    overflow: hidden;
+	    float: left;
+	}
+
+	.team-member-profile img {
+    max-height: 234px;
+  }
+
+  .red-footer {
+	  text-align: center;
+	  padding: 20px;
+	}
+
+	.red-footer p,
+	.red-footer h4 {
+	  margin: auto;
+	}
+
+	.red-footer div {
+	    padding-top: 20px;
+	}
+
+	.footer-linkovi ul {
+	    padding-top: 20px;
+	}
+
+	.red-footer p {
+    padding-top: 20px;
   }
 }
 
