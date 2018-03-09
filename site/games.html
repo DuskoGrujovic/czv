@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="rs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zvezda Esport - Takmičenja</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="index.html"><img src="images/home/crvena-zvezda-esports-logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Tim</a></li>
+          <li><a href="news.html">Vesti</a></li>
+          <li class="active"><a href="games.html">Takmičenja</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Foto</a></li>
+          <li><a href="#">Partneri</a></li>
+        </ul>
+        <ul class="nav navbar-nav live-channels">
+          <li>
+            <img class="broadcast-title" src="images/home/live-title.png">
+          </li>
+          <li>
+            <a href="#" class="live-link">
+              <div id="twitch-live" class="broadcast-lamp live"><div class="liveglow"></div></div>
+              <img class="broadcast-img" src="images/home/twitch.png">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="live-link">
+              <div id="youtube-live" class="broadcast-lamp"><div class="liveglow"></div></div>
+              <img class="broadcast-img" src="images/home/youtube.png">
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container games-page">
+    
+    <!-- Header -->
+
+   <div class="row">
+      <div class="col-sm-12 no-padding">
+      	<img class="news-top-image" src="images/games/games-header.jpg">
+        <div class="choose-team-game">
+          <div id="team-lol" class="team-game-item active">
+            <img src="images/leaderboard/lol-logo.png">
+          </div>
+          <div id="team-csgo" class="team-game-item">
+            <img src="images/leaderboard/csgo-logo.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header END -->
+
+    <!-- Next match -->
+
+    <div class="row">
+      <div class="col-sm-12 no-padding">
+        <div class="next-match">
+          <div class="next-match-info">
+            <h3>Naredni meč</h3>
+            <h4 id="next-match-league">VIP Adria Legue</h4>
+            <span id="next-match-date">21.12.2018., 16:00h</span>
+            <div id="next-match-img"><img src="images/home/lol-logo.png"></div>
+            <div class="match-featured">
+              <a href="#"><img width="30px" src="images/home/twitch.png"></a>
+              <a href="#"><img width="35px" src="images/home/youtube.png"></a>
+              <a href="#"><img width="30px" src="images/home/sk.png"></a>
+            </div>
+          </div>
+          <div class="next-match-logo">
+            <img src="images/home/crvena-zvezda-esports-logo.png">
+            <span class="versus">VS</span>
+            <img src="images/home/senset.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next match END -->
+
+    <!-- Previous match -->
+
+    <div class="row">
+      <div class="col-sm-12 no-padding">
+                <div class="previous-match bd-u bd-b">
+          <div class="previous-match-info bd-r">
+            <h3>Poslednji meč</h3>
+            <div id="previous-match-img">
+              <img src="images/home/lol-logo.png">
+            </div>
+            <h4 id="previous-match-league">EBL 21.12.2018.</h4>
+            <div class="previous-match-logo">
+              <img src="images/home/crvena-zvezda-esports-logo.png">
+              <span id="previous-score">2 : 0</span>
+              <img src="images/home/rur.png">
+            </div>
+          </div>
+          <div class="previous-matches-table">
+            <div id="previous-matches-1" class="previous-matches-item bd-b">
+              <div class="previous-matches-item-info">
+                <img src="images/home/lol-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">5 : 3</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+            <div id="previous-matches-2" class="previous-matches-item bd-b">
+              <div class="previous-matches-item-info">
+                <img src="images/home/lol-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">4 : 5</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+            <div id="previous-matches-3" class="previous-matches-item">
+              <div class="previous-matches-item-info">
+                <img src="images/home/lol-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">2 : 1</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Previous match END -->
+
+    <!-- Leaderboard -->
+
+    <div class="row">
+      <div class="col-sm-12 no-padding">
+        <div id="ebl-leaderboard" class="leaderboard">
+           <div id="ebl-league" class="team-item">
+            <img class="team-img" src="images/leaderboard/ebl-logo.png">
+          </div>
+          <div class="score-list">
+            <!-- Header list -->
+            <div class="score-header">
+              <span class="place">#</span>
+              <span class="team">Team</span>
+              <span class="team-name"></span>
+              <span class="matches">Matches</span>
+              <span class="matches-wl">Matches W-L</span>
+            </div>
+            <!-- 1 -->
+            <div id="score1" class="score-item">
+              <span class="place">1.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-kliktech.png"></span>
+              <span class="team-name">KlikTech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 2 -->
+            <div id="score2" class="score-item">
+              <span class="place">2.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-bontech.png"></span>
+              <span class="team-name">Bontech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 3 -->
+            <div id="score3" class="score-item">
+              <span class="place">3.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-x25.png"></span>
+              <span class="team-name">x25 Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 4 -->
+            <div id="score4" class="score-item">
+              <span class="place">4.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-rur.png"></span>
+              <span class="team-name">RUR Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 5 -->
+            <div id="score5" class="score-item">
+              <span class="place">5.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-cz.png"></span>
+              <span class="team-name">Crvena zvezda</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 6 -->
+            <div id="score6" class="score-item">
+              <span class="place">6.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-asus-rog.png"></span>
+              <span class="team-name">ASUS ROG ELITE</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 7 -->
+            <div id="score7" class="score-item">
+              <span class="place">7.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-ancestral.png"></span>
+              <span class="team-name">Ancestral LoL</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 8 -->
+            <div id="score8" class="score-item">
+              <span class="place">8.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-sigurno.png"></span>
+              <span class="team-name">Sigurno Sirugno</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="vip-leaderboard" class="leaderboard">
+           <div id="vip-league" class="team-item">
+              <img class="team-img" src="images/leaderboard/vip-logo.png">
+            </div>
+          <div class="score-list">
+            <!-- Header list -->
+            <div class="score-header">
+              <span class="place">#</span>
+              <span class="team">Team</span>
+              <span class="team-name"></span>
+              <span class="matches">Matches</span>
+              <span class="matches-wl">Matches W-L</span>
+            </div>
+            <!-- 1 -->
+            <div id="score1" class="score-item">
+              <span class="place">1.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-kliktech.png"></span>
+              <span class="team-name">KlikTech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 2 -->
+            <div id="score2" class="score-item">
+              <span class="place">2.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-bontech.png"></span>
+              <span class="team-name">Bontech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 3 -->
+            <div id="score3" class="score-item">
+              <span class="place">3.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-x25.png"></span>
+              <span class="team-name">x25 Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 4 -->
+            <div id="score4" class="score-item">
+              <span class="place">4.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-rur.png"></span>
+              <span class="team-name">RUR Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 5 -->
+            <div id="score5" class="score-item">
+              <span class="place">5.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-cz.png"></span>
+              <span class="team-name">Crvena zvezda</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 6 -->
+            <div id="score6" class="score-item">
+              <span class="place">6.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-asus-rog.png"></span>
+              <span class="team-name">ASUS ROG ELITE</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 7 -->
+            <div id="score7" class="score-item">
+              <span class="place">7.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-ancestral.png"></span>
+              <span class="team-name">Ancestral LoL</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 8 -->
+            <div id="score8" class="score-item">
+              <span class="place">8.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-sigurno.png"></span>
+              <span class="team-name">Sigurno Sirugno</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaderboard END -->
+
+    <!-- Footer -->
+
+    <div class="row red-footer">
+      <div class="col-sm-3 no-padding centered">
+        <img src="images/home/crvena-zvezda-esports-logo.png">
+      </div>
+      <div class="col-sm-2 no-padding">
+        <h4>RED STAR ESPORTS</h4>
+        <ul>
+          <li><a href="#">TIM</a></li>
+          <li><a href="#">VESTI</a></li>
+          <li><a href="#">TAKMIČENJA</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">FOTO</a></li>
+          <li><a href="#">PARTNERI</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2 no-padding footer-linkovi">
+        <h4>LINKOVI</h4>
+        <ul>
+          <li><a href="#">FK CRVENA ZVEZDA</a></li>
+          <li><a href="#">RED STAR SHOP</a></li>
+          <li><a href="#">BALKAN LEAGUE</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">ESPORTS</a></li>
+          <li><a href="#">ADRIA ARENA</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-5 no-padding footer-linkovi">
+        <h4>O NAMA</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit sodales ut a lacus. Vivamus mattis metus arcu, nec luctus velit vestibulum non. </p>
+      </div>
+    </div>
+
+    <!-- Footer END -->
+
+    <!-- Copyright -->
+
+    <div class="row gray-footer">
+      <p class="copyright">© <span class="currentYear"></span> Red Star. All Rights Reserved.</p>
+      <p class="designed-by">Designed by <a href="#">DesignBüro™</a></p>
+    </div>
+
+    <!-- Copyright END -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
+
+</body>

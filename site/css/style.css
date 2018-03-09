@@ -10,7 +10,7 @@ nav {
   margin-bottom: 0;
   border-radius: 0;
   z-index: 2;
-  background-image: url(../images/home/bg-header-red-texture.jpg);
+  background-image: url(../images/bg-header-red-texture.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -51,6 +51,10 @@ padding: 10px;
   padding: 10px 7px;
 }
 
+.navbar-right li a i {
+  font-size: 20px;
+}
+
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
@@ -65,7 +69,7 @@ padding: 10px;
   font-size: 12px;
 }
 .navbar-brand>img {
-    width: 112px;
+  width: 112px;
 }
 
 .live-channels {
@@ -95,7 +99,6 @@ padding: 10px;
 .broadcast-lamp.live {
   background-image: url(../images/home/lamp-on.png);
 }
-
 
 .live .liveglow {
   border-radius: 50%;
@@ -145,14 +148,25 @@ padding: 10px;
   }
 }
 
-
 /********** END NAVIGATION ***********/
 
 /********** MAIN ***********/
 body {
   background-color: #292929;
   color: #fff;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .main-page {
@@ -192,19 +206,19 @@ a:hover {
 }
 
 .carousel-control i {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    margin-top: -20px;
-    font-size: 50px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  margin-top: -20px;
+  font-size: 50px;
 }
 
 .left.carousel-control i {
-    margin-left: -20px;
+  margin-left: -20px;
 }
 
 .right.carousel-control i {
-    margin-right: -20px;
+  margin-right: -20px;
 }
 
 .carousel-caption {
@@ -216,10 +230,10 @@ a:hover {
 }
 
 .carousel-indicators {
-    bottom: 15px;
-    left: 10%;
-    margin-left: initial;
-    width: initial;
+  bottom: 15px;
+  left: 10%;
+  margin-left: initial;
+  width: initial;
 }
 
 .carousel-indicators li {
@@ -252,7 +266,7 @@ footer {
 
 .next-match {
   background: #000;
-  background-image: url(../images/home/bg-red-texture-alt.jpg);
+  background-image: url(../images/bg-red-texture-alt.jpg);
   background-size: cover;
 }
 
@@ -359,16 +373,15 @@ button.next-news:hover {
 }
 
 .related-news h3 {
-    margin-left: 30px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 .related-news a:hover {
-
   color: grey;
   text-decoration: none;
 }
@@ -416,8 +429,8 @@ button.next-news:hover {
 
 .next-match-info h3 {
   font-style: italic;
-   font-size: 26px;
-   font-weight: 700;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .versus {
@@ -496,7 +509,6 @@ button.next-news:hover {
   max-width: 50px;
   max-height: 50px;
 }
-
 
 .previous-matches-item-info p {
   margin: 5px 0px 0px 0px;
@@ -809,8 +821,8 @@ button.next-news:hover {
 
 .team-profile-menu,
 .team-member-profile {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
 .team-member-profile {
@@ -828,7 +840,7 @@ button.next-news:hover {
 	max-height: 238px;
 	position: absolute;
 	right: 0;
-	}
+}
 
 .team-member-info {
 	background: rgba(0, 0, 0, 0.74);
@@ -879,7 +891,7 @@ button.next-news:hover {
 }
 
 .red-footer {
-	background: url(../images/home/bg-red-texture.jpg);
+	background: url(../images/bg-red-texture.jpg);
   background-size: cover;
 }
 
@@ -947,6 +959,125 @@ button.next-news:hover {
 	float: right;
 }
 
+.team-page .choose-team-game,
+.games-page .choose-team-game {
+  height: 70px;
+}
+
+.team-page .team-game-item,
+.games-page .team-game-item {
+  width: 180px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.team-page #team-csgo {
+  border-right: 1px solid #86151c;
+}
+
+.team-page .team-game-item:before,
+.games-page .team-game-item:before {
+  top: inherit;
+  bottom: -20px;
+}
+
+.games-page .next-match {
+  min-height: 290px;
+}
+
+.games-page .next-match-logo img {
+  max-height: 155px;
+  max-width: 40%;
+}
+
+.games-page .next-match-info h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.games-page #next-match-img img {
+  max-width: 110px;
+  margin: 10px 0 5px;
+}
+
+.games-page .leaderboard {
+  justify-content: center;
+}
+
+.games-page .score-list {
+  max-width: 650px;
+}
+
+.games-page .team-item {
+  margin: 35px -20px 10px;
+  opacity: 1;
+}
+
+.games-page .score-item .team,
+.games-page .score-item .matches-wl,
+.games-page .score-item .matches {
+  border-color: #c34d54;
+}
+
+.games-page #ebl-leaderboard .score-list {
+  border-bottom: 1px solid #c34d54;
+}
+
+.team-page .team-members-wrap {
+  min-height: 234px;
+  background: #000;
+}
+
+.team-page .team-member-profile img {
+  max-height: 256px;
+}
+
+.team-title-header {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  padding-left: 20px;
+  font-style: italic;
+
+  background: #0d0101;
+  background: -moz-linear-gradient(right, #0d0101 0%, #3d0204 94%); 
+  background: -webkit-linear-gradient(right, #0d0101 0%,#3d0204 94%); 
+  background: linear-gradient(to left, #0d0101 0%,#3d0204 94%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0101', endColorstr='#3d0204',GradientType=1 ); 
+}
+
+.team-title-header h2 {
+  line-height: 70px;
+  font-weight: 900;
+}
+
+.team-header-image {
+  width:100%;
+  height:500px;
+  background: url('../images/team//team-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.team-header-image h3 {
+  font-weight: 700;
+  max-width: 250px;
+  padding-bottom: 10px;
+}
+
+.team-header-image p {
+  font-size: 12px;
+  max-width: 500px;
+}
+
+.team-header-info {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
 /********** END MAIN ***********/
 
 /********** MEDIA SIZES ***********/
@@ -963,11 +1094,16 @@ button.next-news:hover {
 	.team-member-profile {
 	    width: 50% !important;
 	}
+
+  .games-page .versus {
+    font-size: 5vw;
+  }
 }
 
 @media (min-width: 768px) {
 
   /********** BORDERS ***********/
+
   .bd-l {
     border-left: 1px solid #86151c;
   }
@@ -983,6 +1119,7 @@ button.next-news:hover {
   .bd-b {
     border-bottom: 1px solid #86151c; 
   }
+
   /********** END BORDERS ***********/
 
   .news-item {
@@ -1022,37 +1159,37 @@ button.next-news:hover {
 	  justify-content: space-between;
 	}
 
-.next-match {
-  height: 220px;
-  display: table;
-  width: 100%;
-}
+  .next-match {
+    height: 220px;
+    display: table;
+    width: 100%;
+  }
 
-.next-match-logo,
-.next-match-info {
-  display: table-cell;
-  vertical-align: middle;
-}
+  .next-match-logo,
+  .next-match-info {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
-.next-match-info {
-  width: 40%;
-}
+  .next-match-info {
+    width: 40%;
+  }
 
-.next-match-logo {
-  width: 60%;
-}
+  .next-match-logo {
+    width: 60%;
+  }
 
-.previous-match {
-  height: 240px;
-  display: table;
-}
+  .previous-match {
+    height: 240px;
+    display: table;
+  }
 
-.previous-match-info,
-.previous-match-table {
-  width: 50%;
-  display: table-cell;
-  vertical-align: middle;
-}
+  .previous-match-info,
+  .previous-match-table {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+  }
 
   .previous-match-info {
     padding-left: 10%;
@@ -1061,6 +1198,23 @@ button.next-news:hover {
   .red-footer {
 		height: 322px;
 	}
+
+  .games-page .next-match-info {
+    padding-left: 20%;
+  }
+
+  .games-page .next-match-logo {
+    width: 50%;
+    padding-right: 10%;
+  }
+
+  .games-page .previous-match-info {
+    padding-left: 20%;
+  }
+
+  .games-page .previous-matches-item {
+    padding-right: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1073,9 +1227,6 @@ button.next-news:hover {
 	}
 
 	.social-nav {
-	/*	position: absolute;
-		top: 44px;
-		right: 20px;*/
 		margin: auto !important;
     padding-bottom: 10px;
 	}
@@ -1084,6 +1235,7 @@ button.next-news:hover {
     height: auto;
     padding: 15px;
   }
+
   .row.content {
     height: auto;
   }
@@ -1096,10 +1248,12 @@ button.next-news:hover {
     width: inherit !important;
     max-height: 75px;
   }
+
   .navbar-right {
     display: table;
     margin-left: -5px;
   }
+
   .navbar-right li {
     display: table-cell;
   }
@@ -1258,42 +1412,54 @@ button.next-news:hover {
 	}
 
 	.red-footer div {
-	    padding-top: 20px;
+	  padding-top: 20px;
 	}
 
 	.footer-linkovi ul {
-	    padding-top: 20px;
+	  padding-top: 20px;
 	}
 
 	.red-footer p {
     padding-top: 20px;
   }
+
+  .games-page .team-item {
+    position: absolute;
+    width: inherit !important;
+    margin: 20px 0 !important;
+  }
+
+  .team-header-info {
+    bottom: 20px;
+    left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 920px) {
-.navbar-right {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-}
+  .navbar-right {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
 
-.live-channels {
-  line-height: 50px;
-  display: inline-table;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+  .live-channels {
+    line-height: 50px;
+    display: inline-table;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 
-.broadcast-lamp {
-  margin: 7px 0 7px 10px;
-}
+  .broadcast-lamp {
+    margin: 7px 0 7px 10px;
+  }
 }
 
 @media all and (max-width: 920px) {
-.matches {
-    display: none;
-  }
+  .matches 
+      display: none;
+    }
 
   .score-item .matches-wl {
     border-right: none;
@@ -1301,37 +1467,37 @@ button.next-news:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-.container {
-  width: 100%;
-}
+  .container {
+    width: 100%;
+  }
 
-.news-caption h3 {
-  font-size: 14px;
-}
+  .news-caption h3 {
+    font-size: 14px;
+  }
 
-.news-caption p {
-  font-size: 9px;
-}
+  .news-caption p {
+    font-size: 9px;
+  }
 
-.next-match {
-  height: 165px !important;
-}
+  .next-match {
+    height: 165px !important;
+  }
 
-.previous-match-logo img {
-  max-height: 55px;
-  max-width: 60px;
-}
+  .previous-match-logo img {
+    max-height: 55px;
+    max-width: 60px;
+  }
 
-#previous-score {
+  #previous-score {
     font-size: 26px;
-}
+  }
 
-.previous-matches-logo img {
+  .previous-matches-logo img {
     max-width: 35px;
     max-height: 35px;
-}
+  }
 
-.previous-matches-score {
+  .previous-matches-score {
     font-size: 16px;
     font-weight: 500;
   }
@@ -1342,23 +1508,9 @@ button.next-news:hover {
 }
 
 @media screen and (max-width: 1200px) {
-.logo-banner img {
-  max-width: 18%;
-}
+  .logo-banner img {
+    max-width: 18%;
+  }
 }
 
 /********** END MEDIA SIZES ***********/
-
-/*Dusko*/
-ul.nav.navbar-nav.navbar-right >li a {
-  font-size: 20px;
-}
-
-.news-top-image {
-  /*background-image: url(../images/vesti/vesti-top-image.jpg);*/
-  width: 100%;
-}
-
-p.sub {
-  font-weight: bold;
-}
