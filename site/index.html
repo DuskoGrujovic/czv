@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="rs">
 
 <head>
   <meta charset="UTF-8">
-  <title>Zvezda Esport</title>
-  <meta charset="utf-8">
+  <title>Zvezda Esport - Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,123 +23,479 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand" href="#"><img src="images/header/crvena-zvezda-esports-logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/home/crvena-zvezda-esports-logo.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Tim</a></li>
-          <li><a href="#">Vesti</a></li>
-          <li><a href="#">Takmičenja</a></li>
+          <li><a href="team.html">Tim</a></li>
+          <li><a href="news.html">Vesti</a></li>
+          <li><a href="games.html">Takmičenja</a></li>
           <li><a href="#">Video</a></li>
           <li><a href="#">Foto</a></li>
           <li><a href="#">Partneri</a></li>
         </ul>
         <ul class="nav navbar-nav live-channels">
           <li>
-            <img class="broadcast-title" src="images/header/live-title.png">
+            <img class="broadcast-title" src="images/home/live-title.png">
           </li>
           <li>
-            <div id="twitch-live" class="broadcast-lamp live"><div class="liveglow"></div></div>
-            <img class="broadcast-img" src="images/header/twitch.png">
+            <a href="#" class="live-link">
+              <div id="twitch-live" class="broadcast-lamp live"><div class="liveglow"></div></div>
+              <img class="broadcast-img" src="images/home/twitch.png">
+            </a>
           </li>
           <li>
-            <div id="youtube-live" class="broadcast-lamp"><div class="liveglow"></div></div>
-            <img class="broadcast-img" src="images/header/youtube.png">
+            <a href="#" class="live-link">
+              <div id="youtube-live" class="broadcast-lamp"><div class="liveglow"></div></div>
+              <img class="broadcast-img" src="images/home/youtube.png">
+            </a>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right social-nav">
           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>
-</a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
-</a></li>
+          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container ">
-
-    <div class="row content">
+    <!-- Slider -->
+    <div class="row content main-page">
       <div class="col-sm-8 no-padding">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class=""></li>
             <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item">
-              <img src="http://bae.rs/ginger/iTicket/gbaner-1.jpg" alt="Image">
+              <img src="images/home/slider/vesti-baner.jpg" alt="Image">
               <div class="carousel-caption">
-                <!--<h3>Tekst</h3>
-                <p>Datum</p>-->
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum</p>
               </div>
             </div>
 
             <div class="item active">
-              <img src="http://bae.rs/ginger/iTicket/gbaner-2.jpg" alt="Image">
+              <img src="images/home/slider/vesti-baner.jpg" alt="Image">
               <div class="carousel-caption">
-                <!--<h3>Tekst</h3>
-                <p>Datum</p>-->
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem ipsum</p>
               </div>
             </div>
           </div>
 
-          <!-- Left and right controls -->
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <i class="fa fa-angle-left"></i>
             <span class="sr-only">Previous</span>
           </a>
           <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <i class="fa fa-angle-right"></i>
             <span class="sr-only">Next</span>
           </a>
         </div>
+    
+    <!-- Slider END -->
+
+    <!-- Next match -->
+    
+        <div class="logo-banner">
+          <img width="160px" src="images/home/parneri/mozzart.png">
+          <img width="120px" src="images/home/parneri/macron.png">
+          <img width="120px" src="images/home/parneri/mts.png">
+          <img width="120px" src="images/home/parneri/winwin.png">
+        </div>
+          <div class="next-match">
+            <div class="next-match-info">
+              <h3>Naredni meč</h3>
+              <div id="next-match-img"><img src="images/home/csgo-logo.png"></div>
+              <h4 id="next-match-league">VIP Adria Legue</h4>
+              <span id="next-match-date">21.12.2018., 16:00h</span>
+              <div class="match-featured">
+                <a href="#"><img width="30px" src="images/home/twitch.png"></a>
+                <a href="#"><img width="35px" src="images/home/youtube.png"></a>
+                <a href="#"><img width="30px" src="images/home/sk.png"></a>
+              </div>
+            </div>
+            <div class="next-match-logo">
+              <img src="images/home/crvena-zvezda-esports-logo.png">
+              <span class="versus">VS</span>
+              <img src="images/home/senset.png">
+            </div>
+          </div>
+      
+    <!-- Next match END -->
+
+    <!-- Previous match -->
+    
+        <div class="previous-match bd-u bd-b">
+          <div class="previous-match-info bd-r">
+            <h3>Poslednji meč</h3>
+            <div id="previous-match-img">
+              <img src="images/home/lol-logo.png">
+            </div>
+            <h4 id="previous-match-league">EBL 21.12.2018.</h4>
+            <div class="previous-match-logo">
+              <img src="images/home/crvena-zvezda-esports-logo.png">
+              <span id="previous-score">2 : 0</span>
+              <img src="images/home/rur.png">
+            </div>
+          </div>
+          <div class="previous-matches-table">
+            <div id="previous-matches-1" class="previous-matches-item bd-b">
+              <div class="previous-matches-item-info">
+                <img src="images/home/csgo-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">5 : 3</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+            <div id="previous-matches-2" class="previous-matches-item bd-b">
+              <div class="previous-matches-item-info">
+                <img src="images/home/csgo-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">4 : 5</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+            <div id="previous-matches-3" class="previous-matches-item">
+              <div class="previous-matches-item-info">
+                <img src="images/home/csgo-logo.png">
+                <p>EBL</p>
+                <span>21.12.2018.</span>
+              </div>
+              <div class="previous-matches-logo">
+                <img src="images/home/crvena-zvezda-esports-logo.png">
+                <span class="previous-matches-score">2 : 1</span>
+                <img src="images/home/rur.png">
+              </div>
+              <div class="previous-matches-link"><a href="#"><img src="images/home/youtube.png"></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous match END -->
+
+        <!-- Youtube video -->
+
+        <div class="youtube-container">
+          <iframe width="100%" height="462" src="https://www.youtube.com/embed/QBbrTyOVwtM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Youtube video END -->
+
       </div>
 
-      <div class="col-sm-4 no-padding">
-        <div class="vesti-header">
+      <!-- News -->
+
+      <div class="col-sm-4 no-padding bd-l">
+        <div class="news-header bd-b">
           <h4>Timske vesti</h4>
           <a href="#">Sve vesti...</a>
         </div>
-        <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#section1">Home</a></li>
-          <li><a href="#section2">Friends</a></li>
-          <li><a href="#section3">Family</a></li>
-          <li><a href="#section3">Photos</a></li>
-        </ul><br>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search Blog..">
-          <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-          </span>
+        <div class="news-item">
+          <div class="news-picture">
+            <img src="images/home/news/vest-1.jpg">
+          </div>
+          <div class="news-caption">
+            <h3>Lorem ipsum dolor sit amet!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit</p>
+          </div>
+        </div>
+        <div class="news-item bd-t">
+          <div class="news-picture">
+            <img src="images/home/news/vest-2.jpg">
+          </div>
+          <div class="news-caption">
+            <h3>Lorem ipsum dolor sit amet!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit</p>
+          </div>
+        </div>
+        <div class="news-header bd-t bd-b">
+          <h4>eSports vesti</h4>
+          <a href="#">Sve vesti...</a>
+        </div>
+        <div class="news-item">
+          <div class="news-picture">
+            <img src="images/home/news/vest-2.jpg">
+          </div>
+          <div class="news-caption">
+            <h3>Lorem ipsum dolor sit amet!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit</p>
+          </div>
+        </div>
+        <div class="news-item bd-t">
+          <div class="news-picture">
+            <img src="images/home/news/vest-2.jpg">
+          </div>
+          <div class="news-caption">
+            <h3>Lorem ipsum dolor sit amet!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- News END -->
+
+    </div>
+
+    <!-- Leaderboard -->
+
+    <div class="row">
+      <div class="col-sm-12 no-padding">
+        <div class="leaderboard lol bd-t">
+          <div class="choose-game">
+            <div id="game-lol" class="game-item active">
+              <img src="images/leaderboard/lol-logo.png">
+            </div>
+            <div id="game-csgo" class="game-item">
+              <img src="images/leaderboard/csgo-logo.png">
+            </div>
+          </div>
+          <div class="score-list">
+            <!-- Header list -->
+            <div class="score-header">
+              <span class="place">#</span>
+              <span class="team">Team</span>
+              <span class="team-name"></span>
+              <span class="matches">Matches</span>
+              <span class="matches-wl">Matches W-L</span>
+            </div>
+            <!-- 1 -->
+            <div id="score1" class="score-item">
+              <span class="place">1.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-kliktech.png"></span>
+              <span class="team-name">KlikTech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 2 -->
+            <div id="score2" class="score-item">
+              <span class="place">2.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-bontech.png"></span>
+              <span class="team-name">Bontech</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 3 -->
+            <div id="score3" class="score-item">
+              <span class="place">3.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-x25.png"></span>
+              <span class="team-name">x25 Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 4 -->
+            <div id="score4" class="score-item">
+              <span class="place">4.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-rur.png"></span>
+              <span class="team-name">RUR Esports</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 5 -->
+            <div id="score5" class="score-item">
+              <span class="place">5.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-cz.png"></span>
+              <span class="team-name">Crvena zvezda</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 6 -->
+            <div id="score6" class="score-item">
+              <span class="place">6.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-asus-rog.png"></span>
+              <span class="team-name">ASUS ROG ELITE</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 7 -->
+            <div id="score7" class="score-item">
+              <span class="place">7.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-ancestral.png"></span>
+              <span class="team-name">Ancestral LoL</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+            <!-- 8 -->
+            <div id="score8" class="score-item">
+              <span class="place">8.</span>
+              <span class="team"><img class="team-img" src="images/leaderboard/team-sigurno.png"></span>
+              <span class="team-name">Sigurno Sirugno</span>
+              <span class="matches">21</span>
+              <span class="matches-wl">7 - 0 - 0</span>
+            </div>
+          </div>
+          <div class="choose-team">
+            <div id="ebl-league" class="team-item active">
+              <img class="team-img" src="images/leaderboard/ebl-logo.png">
+            </div>
+            <div id="vip-league" class="team-item">
+              <img class="team-img" src="images/leaderboard/vip-logo.png">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- END Slider row -->
 
-    <!-- Naredni mec row -->
-    <div class="row">
-      <div class="col-sm-8 no-padding">
-        <div class="logotipi-baner"></div>
-        <div class="naredni-mec"></div>
+    <!-- Leaderboard END -->
+
+    <!-- Teams -->
+
+    <div class="row darker bd-t">
+      <div class="col-sm-12 no-padding bd-b">
+        <div class="choose-team-game">
+          <div class="team-game-title">
+            <h4>Teams</h4>
+          </div>
+          <div id="team-lol" class="team-game-item active">
+            <img src="images/leaderboard/lol-logo.png">
+          </div>
+          <div id="team-csgo" class="team-game-item">
+            <img src="images/leaderboard/csgo-logo.png">
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-12 no-padding">
+        <div class="team-profile">
+          <div class="team-profile-menu">
+            <div id="team-first" class="team-categories active">1st Team</div>
+            <div id="team-reserves" class="team-categories">Reserves</div>
+            <div id="team-academy" class="team-categories">Academy</div>
+          </div>
+          <div class="team-members-wrap">
+            <div id="team-member1" class="team-member-profile">
+              <div class="team-member-picture"><img src="images/members/member1.jpg"></div>
+              <div class="team-member-info">
+                <h4>Nickname</h4>
+                <span>Ime Prezime</span>
+                <div class="team-member-links">
+                  <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="team-member2" class="team-member-profile">
+              <div class="team-member-picture"><img src="images/members/member1.jpg"></div>
+              <div class="team-member-info">
+                <h4>Nickname</h4>
+                <span>Ime Prezime</span>
+                <div class="team-member-links">
+                  <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="team-member3" class="team-member-profile">
+              <div class="team-member-picture"><img src="images/members/member1.jpg"></div>
+              <div class="team-member-info">
+                <h4>Nickname</h4>
+                <span>Ime Prezime</span>
+                <div class="team-member-links">
+                  <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="team-member4" class="team-member-profile">
+              <div class="team-member-picture"><img src="images/members/member1.jpg"></div>
+              <div class="team-member-info">
+                <h4>Nickname</h4>
+                <span>Ime Prezime</span>
+                <div class="team-member-links">
+                  <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="team-member5" class="team-member-profile">
+              <div class="team-member-picture"><img src="images/members/member1.jpg"></div>
+              <div class="team-member-info">
+                <h4>Nickname</h4>
+                <span>Ime Prezime</span>
+                <div class="team-member-links">
+                  <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Teams END -->
+
+    <!-- Footer -->
+
+    <div class="row red-footer">
+      <div class="col-sm-3 no-padding centered">
+        <img src="images/home/crvena-zvezda-esports-logo.png">
+      </div>
+      <div class="col-sm-2 no-padding">
+        <h4>RED STAR ESPORTS</h4>
+        <ul>
+          <li><a href="#">TIM</a></li>
+          <li><a href="#">VESTI</a></li>
+          <li><a href="#">TAKMIČENJA</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">FOTO</a></li>
+          <li><a href="#">PARTNERI</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2 no-padding footer-linkovi">
+        <h4>LINKOVI</h4>
+        <ul>
+          <li><a href="#">FK CRVENA ZVEZDA</a></li>
+          <li><a href="#">RED STAR SHOP</a></li>
+          <li><a href="#">BALKAN LEAGUE</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">ESPORTS</a></li>
+          <li><a href="#">ADRIA ARENA</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-5 no-padding footer-linkovi">
+        <h4>O NAMA</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque aliquet urna, sit amet euismod est rhoncus vitae. Nam quis tortor a arcu hendrerit sodales ut a lacus. Vivamus mattis metus arcu, nec luctus velit vestibulum non. </p>
+      </div>
+    </div>
+
+    <div class="row gray-footer">
+      <p class="copyright">© <span class="currentYear"></span> Red Star. All Rights Reserved.</p>
+      <p class="designed-by">Designed by <a href="#">DesignBüro™</a></p>
+    </div>
+
+    <!-- Footer END -->
+
   </div>
 
-  <footer class="container-fluid">
-    <p>Footer Text</p>
-  </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="js/index.js"></script>
 
 </body>
-
 </html>
